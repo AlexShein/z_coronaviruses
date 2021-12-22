@@ -1,15 +1,16 @@
-import tempfile
+from Bio import SeqIO
+from typing import Dict
+import logging
 import os
 import pandas as pd
 import subprocess
-from typing import Dict
-from Bio import SeqIO
-import logging
+import tempfile
 
 logging.basicConfig(level=logging.DEBUG,)
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('process_zscores')
 
 EXECUTABLE = '/Users/alexandershein/Code/z_coronaviruses/zhunt3-alan'
+SEQUENCES_FILE = '/Users/alexandershein/Code/z_coronaviruses/evolutionary_zscores/61_coronaviruses.fasta'
 
 
 def compute_and_save_zscores(
@@ -63,7 +64,5 @@ def read_sequences(path: str) -> Dict[str, str]:
 
 
 if __name__ == '__main__':
-    sequneces = read_sequences(
-        '/Users/alexandershein/Code/z_coronaviruses/evolutionary_zscores/61_coronaviruses.fasta'
-    )
+    sequneces = read_sequences(SEQUENCES_FILE,)
     compute_and_save_zscores(sequneces)
