@@ -1,10 +1,11 @@
-from Bio import SeqIO
-from typing import Dict
 import logging
 import os
-import pandas as pd
 import subprocess
 import tempfile
+from typing import Dict
+
+import pandas as pd
+from Bio import SeqIO
 
 logging.basicConfig(level=logging.DEBUG,)
 logger = logging.getLogger('process_zscores')
