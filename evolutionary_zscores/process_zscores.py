@@ -3,7 +3,7 @@ import os
 import subprocess
 import tempfile
 from typing import Dict
-
+import fire
 import pandas as pd
 from Bio import SeqIO
 
@@ -64,6 +64,10 @@ def read_sequences(path: str) -> Dict[str, str]:
     return {record.id: str(record.seq) for record in SeqIO.parse(path, "fasta")}
 
 
+def main(sequences_file: str):
+    sequences = read_sequences(sequences_file)
+    compute_and_save_zscores(sequences)
+
+
 if __name__ == '__main__':
-    sequneces = read_sequences(SEQUENCES_FILE,)
-    compute_and_save_zscores(sequneces)
+    fire.Fire(main)

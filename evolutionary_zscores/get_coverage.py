@@ -36,6 +36,7 @@ def generate_coverage(*args) -> List[dict]:
             )
             intersections_df = intersections.as_df()
             mean_score = 0 if intersections_df.empty else intersections_df['Z-Score'].mean()
+            median_score = 0 if intersections_df.empty else intersections_df['Z-Score'].median()
             results.append(
                 {
                     "Start": coord,
@@ -43,6 +44,7 @@ def generate_coverage(*args) -> List[dict]:
                     "Start_r": coord / sequence_length,
                     "End_r": (coord + STEP_COVERAGE) / sequence_length,
                     'Mean_Z-Score': mean_score,
+                    'Median_Z-Score': median_score,
                     "Threshold": threshold,
                     "Sequence_id": sequence_id,
                 }
@@ -63,7 +65,6 @@ def merge_intersecting_ranges(*args) -> List[dict]:
             .merge()
             .as_df()
         )
-        print(ranges_df)
         ranges_df['Threshold'] = threshold
         ranges_df['Sequence_id'] = sequence_id
 
@@ -75,23 +76,18 @@ def merge_intersecting_ranges(*args) -> List[dict]:
 
 def get_sequences_info(path: str) -> List[Tuple[str, int]]:
     res = [(record.id, len(record.seq)) for record in SeqIO.parse(path, "fasta")]
-    # sequences_dict = {r_id: r_len for (r_id, r_len) in res}
-    # sequences_df = pd.read_csv('all_sequences.csv', sep=' ')
-    # sequences_df['Length'] = (sequences_df['Accession_no.'] + '.1').map(sequences_dict)
-    # sequences_df.to_csv('all_sequences.csv', sep=' ', index=False)
     logger.info(f'Found {len(res)} sequences to process')
     return res
 
 
-def main(merge: bool = False):
+def main(sequences_file: str, out_file: str, merge: bool = False):
     func = generate_coverage if not merge else merge_intersecting_ranges
-    out_file = OUT_FILE_POSITIONS if not merge else OUT_FILE_MERGED
     if merge:
         logger.info('Running merge')
     else:
         logger.info('Running coverage')
     with mp.Pool(4) as pool:
-        results = chain(*pool.map(func, get_sequences_info(SEQUENCES_FILE)))
+        results = chain(*pool.map(func, get_sequences_info(sequences_file)))
         logger.info('Processing is finished, saving results to file')
         res_df = pd.DataFrame(results)
         res_df.to_csv(out_file)
