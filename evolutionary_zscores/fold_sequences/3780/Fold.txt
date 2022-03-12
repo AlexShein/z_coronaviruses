@@ -1,0 +1,6 @@
+>SARS_2003
+GCAGCAUAUGAAAAUUUCAAUUCACAGGACAUCUUACUUGCACCAUUGUUGUCAGCAGGCAUAUUUGGUGCUAAACCACUUCAGUCUUUACAAGUGUGCGUGCAGACGGUUCGUACACAGGUUUAUAUUGCAGUCAAUGACAAAGCUCUUUAUGAGCAGGUUGUCAUGGAUUAUCUUGAUAACCUGAAGCCUAGAGUGGA
+........((((........))))...............((((((....((((....))))....))))))....((((((.((.((((....(((((((.((.....)).)))))))(((((........((((.(((((((.((((.....))))...))))))).))))........))))))))).)).)))))).
+> SARS_CoV_2
+AGUGCUUAUGAAAAUUUUAAUCAGCACGAAGUUCUACUUGCACCAUUAUUAUCAGCUGGUAUUUUUGGUGCUGACCCUAUACAUUCUUUAAGAGUUUGUGUAGAUACUGUUCGCACAAAUGUCUACUUAGCUGUCUUUGAUAAAAAUCUCUAUGACAAACUUGUUUCAAGCUUUUUGGAAAUGAAGAGUGAAAAGCA
+..(((((.............(((((((.(((...((((.((.............)).))))..))).))))))).......((((((((((((((((((((.((......)))))))))).))).......((((...((........))...))))......((((((.....)))))).)))))))))..)))))
