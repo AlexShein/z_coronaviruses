@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG,)
 logger = logging.getLogger('process_zscores')
 
 EXECUTABLE = '/Users/alexandershein/Code/z_coronaviruses/zhunt3-alan_upd'
-SEQUENCES_FILE = '/Users/alexandershein/Code/z_coronaviruses/corr_analysis/data/aligned_32_sequences.fasta'
+SEQUENCES_FILE = '/Users/alexandershein/Code/z_coronaviruses/corr_analysis/data/aligned_35_sequences.fasta'
 RESULT_PATH = '/Users/alexandershein/Code/z_coronaviruses/corr_analysis/zscores/'
 
 
