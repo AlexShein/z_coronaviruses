@@ -3,7 +3,7 @@ Z-HUNT-2 computer program, Sept.19, 1990
 */
 
 /*
-serialized i/o to allow to run against large datasets 
+serialized i/o to allow to run against large datasets
 Updated i/o permissions to match posix. campt 1/10/2000
 */
 
@@ -220,8 +220,8 @@ void assign_bzenergy_index( int nucleotides, char seq[] )
                          case 'g' : idx = 16;  break;
 			 case 'n' : idx = 16;  break;
                          case 'c' : idx = 16;  break;
-                       }  break;					   
-					   
+                       }  break;
+
         }
       bzindex[j++] = idx;
     }  while( i < nucleotides );
@@ -315,7 +315,7 @@ FILE *open_file( int mode, char *filename, char *typestr )
   static char *iostr[] = { "output", "input" };
   static char *rwstr[] = { "w",     "r" };
   char  *fullfile;
-  
+
   FILE *file;
   file = NULL;
   fullfile = (char *) malloc(sizeof(char) * ( strlen(filename) + strlen(typestr) + 1) );
@@ -326,7 +326,7 @@ FILE *open_file( int mode, char *filename, char *typestr )
 	strcat(fullfile, typestr);
 	}
 printf("opening %s\n", fullfile);
-   
+
   file = fopen( fullfile, rwstr[mode] );
   free(fullfile);
   return file;
@@ -381,7 +381,7 @@ while( j=0, fgets( tempstr, 128, file ) != NULL )
 				if( c == 'N')
 				{
 				c = 'n';
-				}	
+				}
           		if( c == 'A')
 				{
 				c = 'a';
@@ -419,7 +419,7 @@ while( j=0, fgets( tempstr, 128, file ) != NULL )
 #endif
 	}
 #ifdef USE_MMAP
-	close(OUTPUT);	
+	close(OUTPUT);
 	sequencefile = open ("/usr/local/apache/htdocs/zhunt/temp", O_RDWR, NULL);
 	free(sequence);
 	sequence = (char *) mmap(0,length, PROT_READ | PROT_WRITE,MAP_SHARED,sequencefile,0);
@@ -574,7 +574,7 @@ void calculate_zscore( double a, int maxdinucleotides, int min, int max, char *f
           deltatwist = a * (double)din;
           antisyn[2*din] = 0;
           anti_syn_energy( 0, din, 0.0 );           /* esum = 0.0 */
-          dl = find_delta_linking( din );  
+          dl = find_delta_linking( din );
           if( dl < bestdl )
             {
               bestdl = dl;
@@ -587,14 +587,14 @@ void calculate_zscore( double a, int maxdinucleotides, int min, int max, char *f
 #endif
       probability = assign_probability( bestdl );
 #ifndef PROB_ONLY
-      fprintf( file, "%i %i %i %7.3lf %7.3lf %le ", i+1, i+1+j, j, bestdl, slope, probability ); 
+      fprintf( file, "%i %i %i %7.3lf %7.3lf %le ", i+1, i+1+j, j, bestdl, slope, probability );
 #else
-      fprintf( file, " %7.3lf %le\n", bestdl, probability ); 
+      fprintf( file, " %7.3lf %le\n", bestdl, probability );
 #endif
 	for( k=0; k<j; k++ )
         fprintf( file,"%c", sequence[i+k] );
         fprintf( file, "   %s\n", bestantisyn );
-        
+
 	}
   time( &endtime );
 
@@ -618,7 +618,7 @@ void analyze_zscore(  char *filename, int low, int high)
   char     **antisyn;
   FILE     *file;
   int      fromdin, todin, nucleotides;
-  
+
 
   printf("use min/max %d %d\n",low,high);
   printf("analyzing_zscore\n");
@@ -647,7 +647,7 @@ void analyze_zscore(  char *filename, int low, int high)
   input_sequence( file, nucleotides, 0 );
   fclose( file );
 /* uncomment to print probability file
- show_probability( seqlength, dl, slope, probability, sequence, antisyn,filename,low,high); 
+ show_probability( seqlength, dl, slope, probability, sequence, antisyn,filename,low,high);
  */
   free( dl );
   free( slope );
@@ -655,7 +655,7 @@ void analyze_zscore(  char *filename, int low, int high)
   for( i=0; i<seqlength; i++ )
     free( antisyn[i] );
   free( antisyn );
- 
+
 #ifndef USE_MMAP
   free( sequence );
 #else
@@ -817,12 +817,12 @@ void show_probability( unsigned seqlength,float *dl, float *slope, float *probab
 {
   unsigned i, j, k;
   FILE     *file;
-  
+
   printf("show_probability\n");
   printf("min/max %d %d\n",low,high);
 
   file = open_file( 0, filename, "probability" );
- 
+
   if( file == NULL )
 	{
 	printf("couldn't open %s.probability!\n",filename);
@@ -833,7 +833,7 @@ void show_probability( unsigned seqlength,float *dl, float *slope, float *probab
         {
 		j = strlen( antisyn[i] );
 		fprintf( file, " %i %i %i %7.3f %7.3f  %10.3e  ", i+1, i+1+j, j, dl[i], slope[i], probability[i] );
-        
+
         for( k=0; k<j; k++ )
         fprintf( file, "%c", sequence[i+k] );
         fprintf( file, "   %s\n", antisyn[i] );

@@ -10,8 +10,8 @@ from Bio import SeqIO
 logging.basicConfig(level=logging.DEBUG,)
 logger = logging.getLogger('process_zscores')
 
-EXECUTABLE = '/Users/alexandershein/Code/z_coronaviruses/zhunt3-alan'
-SEQUENCES_FILE = '/Users/alexandershein/Code/z_coronaviruses/corr_analysis/sequences.fasta'
+EXECUTABLE = '/Users/alexandershein/Code/z_coronaviruses/zhunt3-alan_upd'
+SEQUENCES_FILE = '/Users/alexandershein/Code/z_coronaviruses/corr_analysis/data/aligned_32_sequences.fasta'
 RESULT_PATH = '/Users/alexandershein/Code/z_coronaviruses/corr_analysis/zscores/'
 
 
@@ -28,7 +28,7 @@ def compute_and_save_zscores(
         temp_filenames.append(temp)
 
         with open(temp, 'w') as stream:
-            stream.write(sequence)
+            stream.write(sequence.replace('-', 'N'))
         logger.info(f'Running zhunt for {current} out of {total} sequences')
         processes.append(
             subprocess.Popen(

@@ -1,0 +1,33 @@
+label,accession,name
+ 1,AY274119,SARS CoV Tor2
+ 2,AY278488,SARS CoV BJ01
+ 3,AY613950,SARS CoV PC4-227
+ 4,AY304486,SARS CoV SZ3
+ 8,KC881006,SARS related CoV Rs3367 CHN Rhinolophus sinicus
+ 9,KJ473816,SARS related CoV YN2013 CHN Rhinolophus sinicus
+10,FJ588686,SARS related CoV Rs672/2006 CHN Rhinolophus sinicus
+11,KY417143,SARS related CoV Rs4081 CHN Rhinolophus sinicus
+12,KY417142,SARS related CoV As6526 CHN Aselliscus stoliczkanus
+13,KP886809,SARS related CoV YNLF 34C CHN Rhinolophus Ferrumequinum
+14,DQ071615,SARS related CoV Rp3 CHN Rhinolophus pearsoni
+15,KJ473815,SARS related CoV GX2013 CHN Rhinolophus sinicus
+16,JX993988,SARS related CoV Yunnan2011 CHN Chaerephon plicata
+17,DQ412042,SARS related CoV Rf1 CHN Rhinolophus ferrumequinum
+18,DQ412043,SARS related CoV Rm1 CHN Rhinolophus macrotis
+19,KJ473814,SARS related CoV HuB2013 CHN Rhinolophus sinicus
+20,JX993987,SARS related CoV Shaanxi2011 CHN Rhinolophus pusillus
+21-25,DQ022305,SARS related CoV HKU3-1 CHN Rhinolophus sinicus
+22-26,MG772933,SARS related CoV bat-SL-CoVZC45 CHN Rhinolophus sinicus
+23-27,KY352407,SARS related CoV BtKY72 KEN Rhinolophus sp.
+24-28,NC014470,Bat CoV BM48-31/BGR/2008 BGR Rhinolophus blasii
+29,HQ166910,SARS related CoV ZBCoV NGA Hipposideros commersoni
+30,KF636752,Bat CoV Zhejiang2013 CHN Hipposideros pratti
+31,KJ473821,Bat CoV SC2013 CHN Vespertilio superans
+32,NC019843,MERS-CoV
+33,NC009020,Bat CoV HKU5-1 CHN Pipistrellus abramus
+34,NC009019,Bat CoV HKU4-1 CHN Tylonycteris pachypus
+35,NC009021,Bat CoV HKU9-1 CHN Rousettus lechenaulti
+36,NC030886,Bat CoV GCCDC1 CHN Rousettus leschenaulti
+37,NC005147,HCoV-OC43
+38,NC001846,MHV
+39,NC006577,HCoV-HKU1
