@@ -1,0 +1,246 @@
+<phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phyloxml.org" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <phylogeny rooted="true">
+    <clade>
+      <branch_length>0</branch_length>
+      <clade>
+        <name>36 NC_030886 Bat CoV GCCDC1 CHN Rousettus leschenaulti</name>
+        <branch_length>0.49234780192139727</branch_length>
+      </clade>
+      <clade>
+        <branch_length>0.006915237763688409</branch_length>
+        <clade>
+          <name>37 NC_005147 HCoV-OC43</name>
+          <branch_length>0.48543256415770886</branch_length>
+        </clade>
+        <clade>
+          <branch_length>0.04886298496251723</branch_length>
+          <clade>
+            <branch_length>0.04000021595705827</branch_length>
+            <clade>
+              <branch_length>0.037387976406448586</branch_length>
+              <clade>
+                <branch_length>0.021207245512745</branch_length>
+                <clade>
+                  <name>35 NC_009021 Bat CoV HKU9-1 CHN Rousettus lechenaulti</name>
+                  <branch_length>0.417972889609897</branch_length>
+                </clade>
+                <clade>
+                  <name>38 NC_001846 MHV</name>
+                  <branch_length>0.417972889609897</branch_length>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.005983815477536347</branch_length>
+                <clade>
+                  <name>33 NC_009020 Bat CoV HKU5-1 CHN Pipistrellus abramus</name>
+                  <branch_length>0.43319631964510563</branch_length>
+                </clade>
+                <clade>
+                  <branch_length>0.09331020197892548</branch_length>
+                  <clade>
+                    <name>32 NC_019843 MERS-CoV</name>
+                    <branch_length>0.33988611766618015</branch_length>
+                  </clade>
+                  <clade>
+                    <name>31 KJ473821 Bat CoV SC2013 CHN Vespertilio superans</name>
+                    <branch_length>0.33988611766618015</branch_length>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.1168903127491302</branch_length>
+              <clade>
+                <name>34 NC_009019 Bat CoV HKU4-1 CHN Tylonycteris pachypus</name>
+                <branch_length>0.353693983302424</branch_length>
+              </clade>
+              <clade>
+                <name>29 HQ166910 SARS related CoV ZBCoV NGA Hipposideros commersoni</name>
+                <branch_length>0.353693983302424</branch_length>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <branch_length>0.03662695640697228</branch_length>
+            <clade>
+              <name>39 NC_006577 HCoV-HKU1</name>
+              <branch_length>0.4365695791951916</branch_length>
+            </clade>
+            <clade>
+              <branch_length>0.1938569451659808</branch_length>
+              <clade>
+                <branch_length>0.1507014920662852</branch_length>
+                <clade>
+                  <name>24-28 NC_014470 Bat CoV BM48-31/BGR/2008 BGR Rhinolophus blasii</name>
+                  <branch_length>0.24271263402921084</branch_length>
+                </clade>
+                <clade>
+                  <name>30 KF636752 Bat CoV Zhejiang2013 CHN Hipposideros pratti</name>
+                  <branch_length>0.24271263402921084</branch_length>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.31494714373377586</branch_length>
+                <clade>
+                  <name>18 DQ412043 SARS related CoV Rm1 CHN Rhinolophus macrotis</name>
+                  <branch_length>0.07846698236172017</branch_length>
+                </clade>
+                <clade>
+                  <branch_length>0.06687067305487632</branch_length>
+                  <clade>
+                    <branch_length>0.05565115617130491</branch_length>
+                    <clade>
+                      <branch_length>0.003746998051697051</branch_length>
+                      <clade>
+                        <name> 9 KJ473816 SARS related CoV YN2013 CHN Rhinolophus sinicus</name>
+                        <branch_length>0.007849311255146804</branch_length>
+                      </clade>
+                      <clade>
+                        <branch_length>0.0027467655700812305</branch_length>
+                        <clade>
+                          <branch_length>0.0016913425725535447</branch_length>
+                          <clade>
+                            <name> 6 KY417151 SARS related CoV Rs7327 CHN Rhinolophus sinicus</name>
+                            <branch_length>0.003411203112512029</branch_length>
+                          </clade>
+                          <clade>
+                            <name>12 KY417142 SARS related CoV As6526 CHN Aselliscus stoliczkanus</name>
+                            <branch_length>0.003411203112512029</branch_length>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name> 8 KC881006 SARS related CoV Rs3367 CHN Rhinolophus sinicus</name>
+                          <branch_length>0.005102545685065574</branch_length>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name> 7 KC881005 SARS related CoV RsSHC014 CHN Rhinolophus sinicus</name>
+                      <branch_length>0.011596309306843855</branch_length>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.0610442017556634</branch_length>
+                    <clade>
+                      <name>20 JX993987 SARS related CoV Shaanxi2011 CHN Rhinolophus pusillus</name>
+                      <branch_length>0.006203263722485367</branch_length>
+                    </clade>
+                    <clade>
+                      <branch_length>0.002693501944524722</branch_length>
+                      <clade>
+                        <name>19 KJ473814 SARS related CoV HuB2013 CHN Rhinolophus sinicus</name>
+                        <branch_length>0.0035097617779606453</branch_length>
+                      </clade>
+                      <clade>
+                        <branch_length>0.0024994533484043505</branch_length>
+                        <clade>
+                          <branch_length>0.001191268271758134</branch_length>
+                          <clade>
+                            <name>22-26 MG772933 SARS related CoV bat-SL-CoVZC45 CHN Rhinolophus sinicus</name>
+                            <branch_length>0.0010103084295562947</branch_length>
+                          </clade>
+                          <clade>
+                            <name>23-27 KY352407 SARS related CoV BtKY72 KEN Rhinolophus sp.</name>
+                            <branch_length>0.0010103084295562947</branch_length>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0013345458635240452</branch_length>
+                          <clade>
+                            <branch_length>0.0005120964709176279</branch_length>
+                            <clade>
+                              <name>17 DQ412042 SARS related CoV Rf1 CHN Rhinolophus ferrumequinum</name>
+                              <branch_length>0.0008670308377903835</branch_length>
+                            </clade>
+                            <clade>
+                              <name>21-25 DQ022305 SARS related CoV HKU3-1 CHN Rhinolophus sinicus</name>
+                              <branch_length>0.0008670308377903835</branch_length>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0013666356564663931</branch_length>
+                            <clade>
+                              <branch_length>0.0010016083124068445</branch_length>
+                              <clade>
+                                <name>16 JX993988 SARS related CoV Yunnan2011 CHN Chaerephon plicata</name>
+                                <branch_length>1.2491652241618245E-05</branch_length>
+                              </clade>
+                              <clade>
+                                <branch_length>4.440377965063413E-06</branch_length>
+                                <clade>
+                                  <branch_length>6.142857796057055E-06</branch_length>
+                                  <clade>
+                                    <name>13 KP886809 SARS related CoV YNLF 34C CHN Rhinolophus Ferrumequinum</name>
+                                    <branch_length>3.240662167003361E-06</branch_length>
+                                  </clade>
+                                  <clade>
+                                    <name>15 KJ473815 SARS related CoV GX2013 CHN Rhinolophus sinicus</name>
+                                    <branch_length>3.240662167003361E-06</branch_length>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <branch_length>1.3322456865055843E-06</branch_length>
+                                  <clade>
+                                    <branch_length>4.264425545352779E-06</branch_length>
+                                    <clade>
+                                      <name> 5 KY417146 SARS related CoV Rs4231 CHN Rhinolophus sinicus</name>
+                                      <branch_length>3.7868487312020527E-06</branch_length>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>1.0987246983340526E-06</branch_length>
+                                      <clade>
+                                        <name>11 KY417143 SARS related CoV Rs4081 CHN Rhinolophus sinicus</name>
+                                        <branch_length>2.688124032868E-06</branch_length>
+                                      </clade>
+                                      <clade>
+                                        <name>10 FJ588686 SARS related CoV Rs672/2006 CHN Rhinolophus sinicus</name>
+                                        <branch_length>2.688124032868E-06</branch_length>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>14 DQ071615 SARS related CoV Rp3 CHN Rhinolophus pearsoni</name>
+                                    <branch_length>8.051274276554832E-06</branch_length>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <branch_length>0.001013982309433406</branch_length>
+                              <clade>
+                                <name> 3 AY613950 SARS CoV PC4-227</name>
+                                <branch_length>1.1765521505668897E-07</branch_length>
+                              </clade>
+                              <clade>
+                                <branch_length>2.773657815924313E-08</branch_length>
+                                <clade>
+                                  <name> 4 AY304486 SARS CoV SZ3</name>
+                                  <branch_length>8.991863689744584E-08</branch_length>
+                                </clade>
+                                <clade>
+                                  <branch_length>3.4780696628322616E-08</branch_length>
+                                  <clade>
+                                    <name> 2 AY278488 SARS CoV BJ01</name>
+                                    <branch_length>5.513794026912322E-08</branch_length>
+                                  </clade>
+                                  <clade>
+                                    <name> 1 AY274119 SARS CoV Tor2</name>
+                                    <branch_length>5.513794026912322E-08</branch_length>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>
